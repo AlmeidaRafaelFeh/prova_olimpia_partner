@@ -1,7 +1,3 @@
-📦 Dependências do Projeto
-
-Este projeto utiliza os seguintes pacotes Python:
-
 langchain-groq
 groq
 langchain
@@ -9,27 +5,21 @@ python-dotenv
 streamlit
 yfinance
 pandas
-datetime (biblioteca padrão do Python)
-json (biblioteca padrão do Python)
 feedparser
 
-Caso algum pacote não esteja instalado, utilize:
-    pip install <nome-do-pacote>
+# 📌 Como executar o aplicativo:
+# 1. Na linha 20 do arquivo app.py inclua a chave da API:
+#       client = Groq(api_key="digite sua API_Key")
 
-▶️ Como executar o aplicativo:
-    Na linha 20 do arquivo app.py inclua a chave da API key
-        "client = Groq(api_key="digite sua API_Key")"
+# 2. Ative o ambiente virtual dentro da pasta app:
+#       source venv/bin/activate
 
-    Ative o ambiente virtual dentro da pasta app:
-        source venv/bin/activate
+# 3. Execute o comando abaixo para installar os pacotes necessarios
+#       pip install -r requirements.txt
 
+# 4. Execute o Streamlit:
+#       streamlit run streamlit.py
 
-    Execute o Streamlit:
-        streamlit run streamlit.py
-
-🚀 Possíveis melhorias futuras:
-    Adicionar um sistema de cache local, reduzindo chamadas repetidas ao Groq 
-    e otimizando custos.
-
-    Evoluir o arquivo company_map.json para um banco de dados dinâmico, 
-    atualizado automaticamente via API oficial do governo.
+# 🚀 Possíveis melhorias futuras:
+# - Adicionar um sistema de cache local, reduzindo chamadas repetidas ao Groq e otimizando custos.
+# - Evoluir o arquivo company_map.json para um banco de dados dinâmico, atualizado automaticamente via API oficial do governo.
